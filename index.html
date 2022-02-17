@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <!-- plain css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+        <header>
+                <h1 class="text-center text-5xl mb-8 text-purple-500 font-bold">Monthly income and Cost</h1>
+        </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="ml-6">
+                    <img src="money-pic.png" alt="">
+                </div>
+                <div class="bg-gray-200 ">
+                    <div>
+                        <h1 class="text-center font-semibold text-3xl">Income</h1>
+                        <div class="flex flex-row mx-8 mt-4 gap-4">
+                        <h3 class="font-semibold text-2xl list">Salary :</h3>
+                        <input class="input" type="text">
+                        </div>
+                    </div>
+                    <h1 class="text-center font-semibold text-3xl mt-4">Expenses</h1>
+                    <div class="flex flex-row mx-8 mt-4 gap-4">
+                        <h3 class="font-semibold text-2xl list">Food :</h3>
+                        <input class="input" type="text">
+                        </div>
+
+                        <div class="flex flex-row mx-8 mt-4 gap-4">
+                        <h3 class="font-semibold text-2xl list">Rent :</h3>
+                        <input class="input" type="text">
+                        </div>
+
+                        <div class="flex flex-row mx-8 mt-4 gap-4 content-center">
+                        <h3 class="font-semibold text-2xl gap-4 list">Cloth :</h3>
+                        <input class="input" type="text">
+                        </div>
+                        <!-- bg-sky-500/100 p-2 -->
+                        <button class="Calculate-button">Calculate</button>
+
+                        <h1 class="text-center font-semibold text-3xl mt-4 mb-2">Total Expenses : 100000</h1>
+
+                        <h1 class="text-center font-semibold text-3xl mt-4">Balance : 100000</h1>
+
+                        <div class="flex flex-row mx-8 mt-4 gap-4 content-center">
+                            <h3 class="font-semibold text-2xl gap-4 list">Save</h3>
+                            <input class="saving-field" type="text">
+                        
+                            <p class="font-bold">%</p>
+                            <button class="save-button">Save</button> <br>
+                        </div>
+                            <h1 class="text-center font-semibold text-3xl mt-4 mb-2">Saving Amount : 100000</h1>
+
+                        <h1 class="text-center font-semibold text-3xl mt-4 mb-2">Remaining : 100000</h1>
+
+                </div>
+            </div>
+        </section>
+    </main>
+      
+</body>
+</html>
