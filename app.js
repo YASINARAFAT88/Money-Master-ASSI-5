@@ -2,38 +2,22 @@
 document.getElementById('calculate').addEventListener
 ('click', function () {
     const salary = document.getElementById('salary').value;
-    const salaryText = parseInt(salary);
+    const salaryText = parseFloat(salary);
 
     const food = document.getElementById('foodFeild').value;
-    const foodText = parseInt(food);
+    const foodText = parseFloat(food);
 
     const rent = document.getElementById('rentFeild').value;
-    const rentText = parseInt(rent);
+    const rentText = parseFloat(rent);
 
     const clothes = document.getElementById('clothesFeild').value;
-    const clothesText = parseInt(clothes);
+    const clothesText = parseFloat(clothes);
 
-    // Error Handleing Part 
-    const error = document.getElementById('notify-fail')
-    const success = document.getElementById('notify-success')
-    if(parseInt(isNaN(salary.value && food.value && rent.value && clothes.value))){
-    
-    error.style.display='block';
-    
-    success.style.display='none';
-    }
-    else{
         const total = foodText + rentText + clothesText;
     document.getElementById('totalExpenses').innerText = total;
 
     const balance = salaryText - total;
     document.getElementById('balance').innerText = balance;
-    
-    error.style.display='none';
-
-    success.style.display='block';
-    }
-
     
 })
 
@@ -44,5 +28,5 @@ document.getElementById('savings').addEventListener
     const saveing = document.getElementById('savingField').value;
     const mySave = parseFloat(saveing);
     const totalSaving = balance / mySave;
-    document.getElementById('').innerText = totalSaving;
+    document.getElementById('save-amount').innerText = totalSaving;
 })
