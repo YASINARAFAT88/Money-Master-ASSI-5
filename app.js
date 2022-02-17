@@ -13,6 +13,12 @@ document.getElementById('calculate').addEventListener
     const clothes = document.getElementById('clothesFeild').value;
     const clothesText = parseInt(clothes);
 
+    // Error Handleing Part 
+    if(isNaN(foodText && rentText && clothesText)){
+     const error = document.getElementById('salary')
+     const visibleError = 
+    }
+
     const total = foodText + rentText + clothesText;
     document.getElementById('totalExpenses').innerText = total;
 
@@ -20,3 +26,12 @@ document.getElementById('calculate').addEventListener
     document.getElementById('balance').innerText = balance;
 })
 
+// Savings and Remaining Balance Calculate
+
+document.getElementById('savings').addEventListener
+('click', function() {
+    const saveing = document.getElementById('savingField').value;
+    const mySave = parseFloat(saveing);
+    const totalSaving = balance / mySave;
+    document.getElementById('').innerText = totalSaving;
+})
